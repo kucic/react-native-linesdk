@@ -1,4 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="io.travelai">
+          package="io.travelai.linesdk">
+
+    <uses-permission android:name="android.permission.INTERNET" />    
 
 </manifest>

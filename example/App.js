@@ -18,13 +18,19 @@ export default class App extends Component<{}> {
     message: '--'
   };
   componentDidMount() {
-    RNLinesdk.sampleMethod('Testing', 123, (message) => {
-      this.setState({
-        status: 'native callback received',
-        message
-      });
-    });
+      this.lineTest();
   }
+
+  async lineTest(){
+    try{
+      let res = await RNLinesdk.init("1602685315");
+      const resIn = await RNLinesdk.login(['PROFILE'], 'aggressive');
+      
+    }catch(error){
+      console.log(error);
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>

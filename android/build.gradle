@@ -73,6 +73,7 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
+    implementation 'com.linecorp:linesdk:5.3.1'
 }
 
 def configureReactNativePom(def pom) {
@@ -82,7 +83,7 @@ def configureReactNativePom(def pom) {
         name packageJson.title
         artifactId packageJson.name
         version = packageJson.version
-        group = "io.travelai"
+        group = "io.travelai.linesdk"
         description packageJson.description
         url packageJson.repository.baseUrl
 
