@@ -6,6 +6,7 @@
 
 # package
 node_modules
+android/.idea/
 
 # Files for the ART/Dalvik VM
 *.dex
