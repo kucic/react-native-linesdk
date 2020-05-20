@@ -18,13 +18,13 @@ export default class App extends Component<{}> {
     message: '--'
   };
   componentDidMount() {
-      this.lineTest();
+      //this.lineTest();
   }
 
   async lineTest(){
     try{
-      let res = await RNLinesdk.init("1602685315");
-      const resIn = await RNLinesdk.login(['PROFILE'], 'aggressive');
+      //let res = await RNLinesdk.init("1602685315");
+      //const resIn = await RNLinesdk.login(['PROFILE'], 'aggressive');
       
     }catch(error){
       console.log(error);
