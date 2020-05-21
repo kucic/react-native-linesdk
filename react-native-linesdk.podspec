@@ -24,5 +24,6 @@ Pod::Spec.new do |s|
   s.dependency "React"
   # ...
   # s.dependency "..."
+  s.dependency 'LineSDK', '~> 5.0'
 end
 
