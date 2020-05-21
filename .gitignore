@@ -7,6 +7,10 @@
 # package
 node_modules/
 android/.idea/
+ios/pods
+.settings
+.classpath
+.project
 
 # Files for the ART/Dalvik VM
 *.dex
