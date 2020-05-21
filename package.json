@@ -1,7 +1,7 @@
 {
   "name": "@kucic/react-native-linesdk",
   "title": "React Native Linesdk",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "rn use line sdk.",
   "main": "index.js",
   "scripts": {

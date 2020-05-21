@@ -4,8 +4,10 @@
 *.ap_
 *.aab
  
+build/
+app/build/
 android/.idea/
-ios/pods
+ios/pods/
 
 # node.js
 #

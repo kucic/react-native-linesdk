@@ -24,13 +24,25 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import RNLinesdk from 'react-native-linesdk'
+import RNLinesdk from '@kucic/react-native-linesdk'
 if(!RNLinesdk){
   console.error('Module is Not Linked')
 }
 
-const App: () => React$Node = () => {
+const lineuse = async () => {
+  try{
+    let result = await RNLinesdk.init("1602685315");
+    if(result){
+      let resIn = await RNLinesdk.login(['PROFILE'], 'aggressive');
+      console.log(resIn)
+    }
+  }catch(error){
+    console.log(error)
+  }
+}
 
+const App: () => React$Node = () => {
+  lineuse();
   return (
     <>
       <StatusBar barStyle="dark-content" />
