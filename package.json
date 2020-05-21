@@ -4,13 +4,6 @@
   "version": "1.0.0",
   "description": "rn use line sdk.",
   "main": "index.js",
-  "files": [
-    "README.md",
-    "android",
-    "index.js",
-    "ios",
-    "react-native-linesdk.podspec"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
